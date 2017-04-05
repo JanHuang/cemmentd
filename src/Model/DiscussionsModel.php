@@ -7,7 +7,7 @@ use FastD\Model\Model;
 
 class DiscussionsModel extends Model
 {
-    const TABLE = '';
+    const TABLE = 'discussions';
     const LIMIT = '15';
 
     public function select($page = 1)
