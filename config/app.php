@@ -11,7 +11,7 @@ return [
     /**
      * The application name.
      */
-    'name' => 'dobee',
+    'name' => 'commentd',
 
     /**
      * Application environment local/dev/prod
@@ -27,7 +27,7 @@ return [
      * Application logger path
      */
     'log' => [
-        'error' => \Monolog\Handler\StreamHandler::class, // 错误日志
+        \Monolog\Handler\StreamHandler::class, // 错误日志
     ],
 
     /**

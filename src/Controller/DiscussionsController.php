@@ -46,4 +46,15 @@ class DiscussionsController
 
         return json($discussions);
     }
+
+    public function reply(ServerRequest $request)
+    {
+        $query = $request->getQueryParams();
+
+        $id = $request->getAttribute('id');
+
+        $discussions = model('discussions')->findReplyDiscussions(empty($id) ? 0 : $id, isset($query['p']) ? $query['p'] : 1);
+
+        return json($discussions);
+    }
 }

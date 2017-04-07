@@ -7,4 +7,7 @@ route()->group('/api', function () {
     route()->post('/discussions', 'DiscussionsController@create');
     route()->patch('/discussions/{id}', 'DiscussionsController@patch');
     route()->delete('/discussions/{id}', 'DiscussionsController@delete');
+    route()->get('/discussions/reply/{id}', 'DiscussionsController@reply');
+    route()->get('/discussions/user/{id}', 'UserDiscussionsController@select');
+    route()->get('/discussions/target/{id}', 'TargetDiscussionsController@select');
 });
