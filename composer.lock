@@ -102,16 +102,16 @@
         },
         {
             "name": "fastd/config",
-            "version": "v3.1.0",
+            "version": "v3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/config.git",
-                "reference": "ba1f9988866162b1758ad4db880d580b2535ab1e"
+                "reference": "b7cdc4e732572af1cd94689cfb55bad58920089d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JanHuang/config/zipball/ba1f9988866162b1758ad4db880d580b2535ab1e",
-                "reference": "ba1f9988866162b1758ad4db880d580b2535ab1e",
+                "url": "https://files.phpcomposer.com/files/JanHuang/config/b7cdc4e732572af1cd94689cfb55bad58920089d.zip",
+                "reference": "b7cdc4e732572af1cd94689cfb55bad58920089d",
                 "shasum": ""
             },
             "require": {
@@ -146,7 +146,7 @@
                 "FastD",
                 "config"
             ],
-            "time": "2017-03-20 03:19:11"
+            "time": "2017-04-16 14:44:43"
         },
         {
             "name": "fastd/container",
@@ -197,12 +197,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/fastD.git",
-                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79"
+                "reference": "22f215ab77c5865502a305d66ea22d7d9e3673f8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/22f546bb30c080084dc772d0b1eb2bd0cb290e79.zip",
-                "reference": "22f546bb30c080084dc772d0b1eb2bd0cb290e79",
+                "url": "https://files.phpcomposer.com/files/JanHuang/fastD/22f215ab77c5865502a305d66ea22d7d9e3673f8.zip",
+                "reference": "22f215ab77c5865502a305d66ea22d7d9e3673f8",
                 "shasum": ""
             },
             "require": {
@@ -253,20 +253,20 @@
             "keywords": [
                 "FastD"
             ],
-            "time": "2017-04-11 12:11:49"
+            "time": "2017-04-18 09:05:53"
         },
         {
             "name": "fastd/http",
-            "version": "v3.0.10",
+            "version": "v3.0.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/http.git",
-                "reference": "3d2f2472f230e18d69d4d791c060aa770b839c9c"
+                "reference": "dbce3423545759d23712fb7f56063dfa09492854"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/http/3d2f2472f230e18d69d4d791c060aa770b839c9c.zip",
-                "reference": "3d2f2472f230e18d69d4d791c060aa770b839c9c",
+                "url": "https://files.phpcomposer.com/files/JanHuang/http/dbce3423545759d23712fb7f56063dfa09492854.zip",
+                "reference": "dbce3423545759d23712fb7f56063dfa09492854",
                 "shasum": ""
             },
             "require": {
@@ -297,7 +297,7 @@
                 "FastD",
                 "http"
             ],
-            "time": "2017-04-10 15:05:17"
+            "time": "2017-04-18 14:45:54"
         },
         {
             "name": "fastd/middleware",
@@ -464,16 +464,16 @@
         },
         {
             "name": "fastd/testing",
-            "version": "v0.3.0",
+            "version": "v0.3.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JanHuang/testing.git",
-                "reference": "d74e68d54c28713215d87b7b518ddb9da98676ad"
+                "reference": "e7c5f203740fd09997b166ce3a4afbfb4b8a0c68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://files.phpcomposer.com/files/JanHuang/testing/d74e68d54c28713215d87b7b518ddb9da98676ad.zip",
-                "reference": "d74e68d54c28713215d87b7b518ddb9da98676ad",
+                "url": "https://files.phpcomposer.com/files/JanHuang/testing/e7c5f203740fd09997b166ce3a4afbfb4b8a0c68.zip",
+                "reference": "e7c5f203740fd09997b166ce3a4afbfb4b8a0c68",
                 "shasum": ""
             },
             "require": {
@@ -496,7 +496,7 @@
                     "email": "bboyjanhuang@gmail.com"
                 }
             ],
-            "time": "2017-04-05 10:31:46"
+            "time": "2017-04-19 01:59:07"
         },
         {
             "name": "fastd/utils",
@@ -1287,16 +1287,16 @@
         },
         {
             "name": "myclabs/deep-copy",
-            "version": "1.6.0",
+            "version": "1.6.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/myclabs/DeepCopy.git",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe"
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/myclabs/DeepCopy/zipball/5a5a9fc8025a08d8919be87d6884d5a92520cefe",
-                "reference": "5a5a9fc8025a08d8919be87d6884d5a92520cefe",
+                "url": "https://files.phpcomposer.com/files/myclabs/DeepCopy/8e6e04167378abf1ddb4d3522d8755c5fd90d102.zip",
+                "reference": "8e6e04167378abf1ddb4d3522d8755c5fd90d102",
                 "shasum": ""
             },
             "require": {
@@ -1325,7 +1325,7 @@
                 "object",
                 "object graph"
             ],
-            "time": "2017-01-26 22:05:40"
+            "time": "2017-04-12 18:52:22"
         },
         {
             "name": "phpdocumentor/reflection-common",
