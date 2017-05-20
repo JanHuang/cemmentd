@@ -9,7 +9,6 @@
 
 namespace Testing;
 
-use Controller\DiscussionsController;
 use FastD\TestCase;
 
 class DiscussionsControllerTest extends TestCase
@@ -18,14 +17,16 @@ class DiscussionsControllerTest extends TestCase
     {
         $request = $this->request('GET', '/api/discussions');
         $response = $this->handleRequest($request);
-//        echo $response->getBody();
+        $json = json_decode($response->getBody(), true);
+        $this->assertCount(1, $json);
     }
 
     public function testDiscussion()
     {
         $request = $this->request('GET', '/api/discussions/1');
         $response = $this->handleRequest($request);
-//        echo $response->getBody();
+        $json = json_decode($response->getBody(), true);
+        $this->assertEquals(1, $json['id']);
     }
 
     public function testAddDiscussion()
@@ -35,9 +36,11 @@ class DiscussionsControllerTest extends TestCase
             'title' => '测试标题',
             'content' => '回复'
         ]);
+        $this->equalsStatus($response, 201);
         $request = $this->request('GET', '/api/discussions');
         $response = $this->handleRequest($request);
-//        echo $response->getBody();
+        $json = json_decode($response->getBody(), true);
+        $this->assertCount(2, $json);
     }
 
     public function testReplyDiscussion()
@@ -47,8 +50,13 @@ class DiscussionsControllerTest extends TestCase
             'reply_id' => 1,
             'content' => '回复'
         ]);
-        $request = $this->request('GET', '/api/discussions/reply/1');
+        $json = json_decode($response->getBody(), true);
+        $this->assertEquals(1, $json['reply_id']);
+        $this->assertEquals(3, $json['id']);
+        $request = $this->request('GET', '/api/discussions/1/reply');
         $response = $this->handleRequest($request);
+        $json = json_decode($response->getBody(), true);
+        $this->assertCount(2, $json);
     }
 
     public function testUserDiscussion()
@@ -59,9 +67,11 @@ class DiscussionsControllerTest extends TestCase
             'reply_id' => 1,
             'content' => '回复'
         ]);
-        $request = $this->request('GET', '/api/discussions/user/1');
+        $this->equalsStatus($response, 201);
+        $request = $this->request('GET', '/api/users/1/discussions');
         $response = $this->handleRequest($request);
-        echo $response;
+        $json = json_decode($response->getBody(), true);
+        $this->assertCount(1, $json);
     }
 
     public function testTargetDiscussion()
@@ -72,8 +82,10 @@ class DiscussionsControllerTest extends TestCase
             'reply_id' => 1,
             'content' => '回复'
         ]);
-        $request = $this->request('GET', '/api/discussions/target/1');
+        $this->equalsStatus($response, 201);
+        $request = $this->request('GET', '/api/target/1/discussions');
         $response = $this->handleRequest($request);
-        echo $response;
+        $json = json_decode($response->getBody(), true);
+        $this->assertCount(1, $json);
     }
 }
