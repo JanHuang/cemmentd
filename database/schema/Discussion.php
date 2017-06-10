@@ -25,8 +25,6 @@ class Discussion extends Migration
             ->addColumn('comments_count', 'integer', ['comment' => '留言数量'])
             ->addColumn('like_count', 'integer')
             ->addColumn('is_locked', 'integer')
-            ->addColumn('created', 'datetime')
-            ->addColumn('updated', 'datetime')
         ;
 
         return $table;

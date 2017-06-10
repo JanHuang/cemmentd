@@ -11,34 +11,6 @@ GET /api/discussions
 
 HTTP/1.1 200 OK
 
-    JSON
-    原始数据
-    头
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 {
   "data": [
     {
@@ -54,8 +26,6 @@ HTTP/1.1 200 OK
       "comments_count": "0",
       "like_count": "0",
       "is_locked": "0",
-      "created": "2017-04-19 21:59:31",
-      "updated": "2017-04-19 21:59:31",
       "is_available": "0",
       "created_at": "0000-00-00 00:00:00",
       "updated_at": "0000-00-00 00:00:00"
@@ -118,8 +88,6 @@ HTTP/1.1 200 OK
       "comments_count": "0",
       "like_count": "0",
       "is_locked": "0",
-      "created": "2017-04-19 21:59:31",
-      "updated": "2017-04-19 21:59:31",
       "is_available": "0",
       "created_at": "0000-00-00 00:00:00",
       "updated_at": "0000-00-00 00:00:00"
@@ -137,8 +105,6 @@ HTTP/1.1 200 OK
       "comments_count": "0",
       "like_count": "0",
       "is_locked": "0",
-      "created": "0000-00-00 00:00:00",
-      "updated": "0000-00-00 00:00:00",
       "is_available": "0",
       "created_at": "0000-00-00 00:00:00",
       "updated_at": "0000-00-00 00:00:00"
@@ -245,8 +211,6 @@ HTTP/1.1 200 OK
       "comments_count": "0",
       "like_count": "0",
       "is_locked": "0",
-      "created": "2017-04-19 21:59:31",
-      "updated": "2017-04-19 21:59:31",
       "is_available": "0",
       "created_at": "0000-00-00 00:00:00",
       "updated_at": "0000-00-00 00:00:00"
@@ -282,8 +246,6 @@ HTTP/1.1 200 OK
       "comments_count": "0",
       "like_count": "0",
       "is_locked": "0",
-      "created": "0000-00-00 00:00:00",
-      "updated": "0000-00-00 00:00:00",
       "is_available": "0",
       "created_at": "0000-00-00 00:00:00",
       "updated_at": "0000-00-00 00:00:00"
