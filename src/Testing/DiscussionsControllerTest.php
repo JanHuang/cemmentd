@@ -18,7 +18,7 @@ class DiscussionsControllerTest extends TestCase
         $request = $this->request('GET', '/api/discussions');
         $response = $this->handleRequest($request);
         $json = json_decode($response->getBody(), true);
-        $this->assertCount(1, $json);
+        $this->assertCount(1, $json['data']);
     }
 
     public function testDiscussion()
@@ -40,7 +40,7 @@ class DiscussionsControllerTest extends TestCase
         $request = $this->request('GET', '/api/discussions');
         $response = $this->handleRequest($request);
         $json = json_decode($response->getBody(), true);
-        $this->assertCount(2, $json);
+        $this->assertCount(2, $json['data']);
     }
 
     public function testReplyDiscussion()
@@ -56,7 +56,7 @@ class DiscussionsControllerTest extends TestCase
         $request = $this->request('GET', '/api/discussions/1/reply');
         $response = $this->handleRequest($request);
         $json = json_decode($response->getBody(), true);
-        $this->assertCount(2, $json);
+        $this->assertCount(2, $json['data']);
     }
 
     public function testUserDiscussion()
@@ -71,7 +71,7 @@ class DiscussionsControllerTest extends TestCase
         $request = $this->request('GET', '/api/users/1/discussions');
         $response = $this->handleRequest($request);
         $json = json_decode($response->getBody(), true);
-        $this->assertCount(1, $json);
+        $this->assertCount(2, $json['data']);
     }
 
     public function testTargetDiscussion()
@@ -86,6 +86,6 @@ class DiscussionsControllerTest extends TestCase
         $request = $this->request('GET', '/api/target/1/discussions');
         $response = $this->handleRequest($request);
         $json = json_decode($response->getBody(), true);
-        $this->assertCount(1, $json);
+        $this->assertCount(1, $json['data']);
     }
 }
