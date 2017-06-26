@@ -9,9 +9,7 @@
 
 namespace Testing;
 
-use FastD\TestCase;
-
-class DiscussionsControllerTest extends TestCase
+class DiscussionsControllerTest extends ApiTestCase
 {
     public function testDiscussions()
     {
