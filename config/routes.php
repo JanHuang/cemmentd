@@ -8,6 +8,8 @@ route()->group('/api', function () {
     route()->patch('/discussions/{id}', 'DiscussionsController@patch');
     route()->delete('/discussions/{id}', 'DiscussionsController@delete');
     route()->get('/discussions/{id}/reply', 'DiscussionsController@reply');
+
+    // extension apis
     route()->get('/users/{id}/discussions', 'UserDiscussionsController@select');
     route()->get('/target/{id}/discussions', 'TargetDiscussionsController@select');
 });
